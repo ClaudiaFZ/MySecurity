@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MySecurity</string>
+    <string name="ayuda">Help</string>
+    <string name="compartir_ubicacion">Share ubication</string>
+    <string name="atravesando_zona">Cossing zone...</string>
+    <string name="grabar">Record</string>
+    <string name="sonido_flash">Sound and flash</string>
+    <string name="mapa">Map</string>
+    <string name="set_time">Set time (minutes)</string>
+    <string name="boton_comenzar">Start</string>
+    <string name="llamando_a">Calling to</string>
+    <string name="emergencias">EMERGENCY</string>
+    <string name="cinco_segundos">in 5 seconds...</string>
+    <string name="cancelar">Cancel</string>
+    <string name="cuenta">Cuenta atrás:</string>
+    <string name="pulsacion">Touch if everithing is OK</string>
+    <string name="video_audio">Video and audio</string>
+    <string name="audio">Audio</string>
+    <string name="flash">Flash</string>
+    <string name="sonido">Sound</string>
+    <string name="anadir_sonido">Add sound</string>
+    <string name="anadir_contacto">Add emergency contact</string>
+    <string name="notificaciones">Notications</string>
+    <string name="numero_emergencias">Emergency number</string>
+    <string name="cerrar_sesion">Log out</string>
+    <string name="iniciar_sesion">Log in</string>
+    <string name="crear_cuenta">Create acount</string>
+    <string name="usuario">User</string>
+    <string name="contrasena">Password</string>
+    <string name="bienvenida">WELCOME</string>
+
+</resources>

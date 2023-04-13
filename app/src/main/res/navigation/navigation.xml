@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/principalFragment">
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.example.mysecurity.PrincipalFragment"
+        android:label="PrincipalFragment" >
+        <action
+            android:id="@+id/action_principalFragment_to_setAtravesarZonaFragment"
+            app:destination="@id/setAtravesarZonaFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_grabarFragment"
+            app:destination="@id/grabarFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_sonidoFlashFragment"
+            app:destination="@id/sonidoFlashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setAtravesarZonaFragment"
+        android:name="com.example.mysecurity.SetAtravesarZonaFragment"
+        android:label="SetAtravesarZonaFragment" >
+        <action
+            android:id="@+id/action_setAtravesarZonaFragment_to_atravesandoZonaFragment"
+            app:destination="@id/atravesandoZonaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/atravesandoZonaFragment"
+        android:name="com.example.mysecurity.AtravesandoZonaFragment"
+        android:label="AtravesandoZonaFragment" >
+        <argument
+            android:name="minutos"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.mysecurity.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.example.mysecurity.AyudaFragment"
+        android:label="AyudaFragment" />
+    <fragment
+        android:id="@+id/grabarFragment"
+        android:name="com.example.mysecurity.GrabarFragment"
+        android:label="GrabarFragment" />
+    <fragment
+        android:id="@+id/sonidoFlashFragment"
+        android:name="com.example.mysecurity.SonidoFlashFragment"
+        android:label="SonidoFlashFragment" />
+</navigation>
