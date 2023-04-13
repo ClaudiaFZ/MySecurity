@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.example.mysecurity.databinding.FragmentAnadirContactoBinding
+import androidx.navigation.findNavController
+import com.example.mysecurity.databinding.FragmentIniciarSesionBinding
 
-class AnadirContactoFragment : Fragment() {
-    lateinit var binding: FragmentAnadirContactoBinding
+class IniciarSesionFragment : Fragment() {
+
+    lateinit var binding: FragmentIniciarSesionBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -17,10 +19,15 @@ class AnadirContactoFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_anadir_contacto,
+            R.layout.fragment_iniciar_sesion,
             container,
             false
         )
+
+        binding.iniciarSesionButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_iniciarSesionFragment_to_principalFragment)
+        }
+
         return binding.root
     }
 

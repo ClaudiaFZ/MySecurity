@@ -8,7 +8,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre"
+            android:hint="@string/usuario"
             android:layout_marginHorizontal="50dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -22,26 +22,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/correo_electronico"
+            android:hint="@string/contrasena"
             android:layout_marginHorizontal="50dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/correo_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/numero_telefono"
-            android:layout_marginHorizontal="50dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/telefono_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -55,12 +41,20 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/cancel_card_edit_button"
+                android:id="@+id/iniciar_sesion_button"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/design_default_color_error"
-                android:text="@string/anadir_contacto" />
+                android:text="@string/iniciar_sesion" />
+
+            <Button
+                android:id="@+id/crear_cuenta_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_error"
+                android:text="@string/crear_cuenta" />
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>

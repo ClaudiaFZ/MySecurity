@@ -29,5 +29,8 @@
     <string name="usuario">User</string>
     <string name="contrasena">Password</string>
     <string name="bienvenida">WELCOME</string>
+    <string name="nombre">Name:</string>
+    <string name="correo_electronico">Email:</string>
+    <string name="numero_telefono">Phone number:</string>
 
 </resources>
