@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/boton_acompatir_ubicacion"
+                    android:id="@+id/boton_compartir_ubicacion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compartir_ubicacion" />

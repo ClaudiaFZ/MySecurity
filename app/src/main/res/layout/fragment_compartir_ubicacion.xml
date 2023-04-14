@@ -10,11 +10,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/contactos_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactos_emergencia"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/contactos_emergecia_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_below="@id/contactos_text"/>
+
+            <EditText
+                android:id="@+id/tiempo_ubicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/insertar_tiempo"
+                android:layout_below="@id/contactos_emergecia_recycler_view"/>
+
+            <Button
+                android:id="@+id/boton_compartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compartir"
+                android:layout_below="@id/tiempo_ubicacion"/>
         </RelativeLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

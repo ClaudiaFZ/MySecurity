@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MySecurity</string>
-    <string name="ayuda">Help</string>
-    <string name="compartir_ubicacion">Share ubication</string>
-    <string name="atravesando_zona">Cossing zone...</string>
-    <string name="grabar">Record</string>
-    <string name="sonido_flash">Sound and flash</string>
-    <string name="mapa">Map</string>
+    <string name="ayuda">HELP</string>
+    <string name="compartir_ubicacion">SHARE UBICATION</string>
+    <string name="atravesando_zona">CROSSING ZONE</string>
+    <string name="grabar">RECORD</string>
+    <string name="sonido_flash">SOUND AND FLASH</string>
+    <string name="mapa">MAP</string>
     <string name="set_time">Set time (minutes)</string>
     <string name="boton_comenzar">Start</string>
     <string name="llamando_a">Calling to</string>
     <string name="emergencias">EMERGENCY</string>
     <string name="cinco_segundos">in 5 seconds...</string>
     <string name="cancelar">Cancel</string>
-    <string name="cuenta">Cuenta atrás:</string>
+    <string name="cuenta">Counting down:</string>
     <string name="pulsacion">Touch if everithing is OK</string>
     <string name="video_audio">Video and audio</string>
     <string name="audio">Audio</string>
@@ -32,5 +32,10 @@
     <string name="nombre">Name:</string>
     <string name="correo_electronico">Email:</string>
     <string name="numero_telefono">Phone number:</string>
+    <string name="inicio">START</string>
+    <string name="rutas">ROUTES</string>
+    <string name="contactos_emergencia">Emergency contacts: </string>
+    <string name="compartir">Share</string>
+    <string name="insertar_tiempo">Duration in minutes</string>
 
 </resources>

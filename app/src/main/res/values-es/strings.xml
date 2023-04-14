@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MySecurity</string>
-    <string name="ayuda">Ayuda</string>
-    <string name="compartir_ubicacion">Compartir ubicación</string>
-    <string name="atravesando_zona">Atravesar zona...</string>
-    <string name="grabar">Grabar</string>
-    <string name="sonido_flash">Sonido y flash</string>
-    <string name="mapa">Mapa</string>
+    <string name="ayuda">AYUDA</string>
+    <string name="compartir_ubicacion">COMPARTIR UBICACIÓN</string>
+    <string name="atravesando_zona">ATRAVESAR ZONA</string>
+    <string name="grabar">GRABAR</string>
+    <string name="sonido_flash">SONIDO Y FLASH</string>
+    <string name="mapa">MAPA</string>
     <string name="set_time">Define el tiempo (minutos)</string>
     <string name="boton_comenzar">Comenzar</string>
     <string name="llamando_a">Llamando a</string>
@@ -32,4 +32,9 @@
     <string name="nombre">Nombre:</string>
     <string name="correo_electronico">Correo Electrónico:</string>
     <string name="numero_telefono">Número de teléfono:</string>
+    <string name="inicio">START</string>
+    <string name="rutas">ROUTES</string>
+    <string name="contactos_emergencia">Contactos de emergencia:</string>
+    <string name="compartir">Compartir</string>
+    <string name="insertar_tiempo">Duración en minutos</string>
 </resources>

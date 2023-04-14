@@ -46,6 +46,12 @@ class PrincipalFragment : Fragment() {
             view.findNavController().navigate(R.id.action_principalFragment_to_sonidoFlashFragment)
 
         }
+
+        binding.botonCompartirUbicacion.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_principalFragment_to_compartirUbicacionFragment)
+
+        }
+
         return binding.root
     }
 

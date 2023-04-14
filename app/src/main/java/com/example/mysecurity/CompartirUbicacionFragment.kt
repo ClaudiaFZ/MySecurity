@@ -23,9 +23,9 @@ class CompartirUbicacionFragment : Fragment() {
             false
         )
         adapter = ContactoAdapter()
-        var contactos: MutableList<ContactoEmergencia> = mutableListOf()
         adapter.data = SecurityAplication.usuario.contactosEmergencia
         binding.contactosEmergeciaRecyclerView.adapter = adapter
+
 
         return binding.root
     }
