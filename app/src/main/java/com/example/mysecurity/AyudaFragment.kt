@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -34,7 +33,7 @@ class AyudaFragment : Fragment() {
             view.findNavController().navigate(R.id.action_ayudaFragment_to_principalFragment)
         }
 
-        //Thread.sleep(5_000)
+        Thread.sleep(5_000)
         //startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:637093883")))
 
 
