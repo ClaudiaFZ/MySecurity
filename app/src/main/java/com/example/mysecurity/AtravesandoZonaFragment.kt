@@ -1,5 +1,9 @@
 package com.example.mysecurity
 
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.fragment.app.Fragment
@@ -7,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.mysecurity.databinding.FragmentAtravesandoZonaBinding
 import java.util.*
@@ -39,6 +44,7 @@ class AtravesandoZonaFragment : Fragment() {
         }
         timeLeftInMillis *= AtravesandoZonaFragmentArgs.fromBundle(requireArguments()).minutos
         updateCountDownText(binding.timerTextview)
+        startTimer()
         return binding.root
     }
 
@@ -51,6 +57,15 @@ class AtravesandoZonaFragment : Fragment() {
 
             override fun onFinish() {
                 isTimerRunning = false
+                val permission = ContextCompat.checkSelfPermission(requireContext().applicationContext,
+                    Manifest.permission.CALL_PHONE)
+
+                if (permission != PackageManager.PERMISSION_GRANTED) {
+                    // ACTION_CALL
+                    startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:637093883")))
+
+                }
+
                 updateButton()
             }
         }.start()
@@ -66,6 +81,7 @@ class AtravesandoZonaFragment : Fragment() {
     }
 
     private fun updateCountDownText(timerTextView: TextView) {
+
         val minutes = (timeLeftInMillis / 1000) / 60
         val seconds = (timeLeftInMillis / 1000) % 60
 
