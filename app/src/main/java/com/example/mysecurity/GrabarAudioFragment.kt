@@ -13,6 +13,8 @@ import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import androidx.core.app.ActivityCompat
+import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import java.io.IOException
 
@@ -141,13 +143,13 @@ class GrabarAudioFragment : Fragment() {
         super.onCreate(icicle)
 
         // Record to the external cache directory for visibility
-        fileName = "${externalCacheDir.absolutePath}/audiorecordtest.3gp"
+        fileName = "${requireContext().externalCacheDir?.absolutePath}/audiorecordtest.3gp"
 
-        ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION)
+        ActivityCompat.requestPermissions(requireActivity(), permissions, REQUEST_RECORD_AUDIO_PERMISSION)
 
-        recordButton = RecordButton(this)
-        playButton = PlayButton(this)
-        val ll = LinearLayout(this).apply {
+        recordButton = RecordButton(requireContext())
+        playButton = PlayButton(requireContext())
+        val ll = LinearLayout(requireContext()).apply {
             addView(recordButton,
                 LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,
