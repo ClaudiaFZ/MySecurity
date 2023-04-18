@@ -6,14 +6,13 @@ import android.content.pm.PackageManager
 import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.core.app.ActivityCompat
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import java.io.IOException
@@ -103,7 +102,7 @@ class GrabarAudioFragment : Fragment() {
         recorder = null
     }
 
-    internal inner class RecordButton(ctx: Context) : Button(ctx) {
+    internal inner class RecordButton(ctx: Context) : androidx.appcompat.widget.AppCompatButton(ctx) {
 
         var mStartRecording = true
 
@@ -122,7 +121,7 @@ class GrabarAudioFragment : Fragment() {
         }
     }
 
-    internal inner class PlayButton(ctx: Context) : Button(ctx) {
+    internal inner class PlayButton(ctx: Context) : androidx.appcompat.widget.AppCompatButton(ctx) {
         var mStartPlaying = true
         var clicker: OnClickListener = OnClickListener {
             onPlay(mStartPlaying)
@@ -137,7 +136,7 @@ class GrabarAudioFragment : Fragment() {
             text = "Start playing"
             setOnClickListener(clicker)
         }
-    }
+    }*/
 
     override fun onCreate(icicle: Bundle?) {
         super.onCreate(icicle)
@@ -161,7 +160,7 @@ class GrabarAudioFragment : Fragment() {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     0f))
         }
-        setContentView(ll)
+        //setContentView(ll)
     }
 
     override fun onStop() {

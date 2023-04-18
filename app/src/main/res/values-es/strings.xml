@@ -37,4 +37,6 @@
     <string name="contactos_emergencia">Contactos de emergencia:</string>
     <string name="compartir">Compartir</string>
     <string name="insertar_tiempo">Duración en minutos</string>
+    <string name="detener_grabacion">Detener grabacion</string>
+
 </resources>
