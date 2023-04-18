@@ -1,23 +1,70 @@
 package com.example.mysecurity
 
-import android.Manifest
-import android.content.Context
-import android.content.pm.PackageManager
-import android.media.MediaPlayer
+
+
 import android.media.MediaRecorder
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import androidx.core.content.PackageManagerCompat.LOG_TAG
+import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
+import com.example.mysecurity.databinding.FragmentGrabarAudioBinding
 import java.io.IOException
 
-private const val LOG_TAG = "AudioRecordTest"
+
+class GrabarAudioFragment : Fragment() {
+    lateinit var binding: FragmentGrabarAudioBinding
+    private var recorder: MediaRecorder? = null
+    private var fileName: String = ""
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        binding = DataBindingUtil.inflate(
+            inflater,
+            R.layout.fragment_grabar_audio,
+            container,
+            false
+        )
+
+        recorder = MediaRecorder(requireContext()).apply {
+            setAudioSource(MediaRecorder.AudioSource.MIC)
+            setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
+
+            setOutputFile(fileName)
+            setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
+
+            try {
+                prepare()
+            } catch (e: IOException) {
+                //Log.e(LOG_TAG, "prepare() failed")
+            }
+
+            start()
+        }
+
+        binding.buttonPararGrabacionAudio.setOnClickListener{
+            recorder?.apply {
+                stop()
+                release()
+            }
+            recorder = null
+        }
+        return binding.root
+    }
+}
+/*private const val LOG_TAG = "AudioRecordTest"
 private const val REQUEST_RECORD_AUDIO_PERMISSION = 200
 
 class GrabarAudioFragment : Fragment() {
@@ -136,7 +183,7 @@ class GrabarAudioFragment : Fragment() {
             text = "Start playing"
             setOnClickListener(clicker)
         }
-    }*/
+    }
 
     override fun onCreate(icicle: Bundle?) {
         super.onCreate(icicle)
@@ -171,3 +218,4 @@ class GrabarAudioFragment : Fragment() {
         player = null
     }
 }
+*/
