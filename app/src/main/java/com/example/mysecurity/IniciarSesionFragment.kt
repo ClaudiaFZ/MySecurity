@@ -24,9 +24,7 @@ class IniciarSesionFragment : Fragment() {
             false
         )
 
-        binding.iniciarSesionButton.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_iniciarSesionFragment_to_principalFragment)
-        }
+
 
         return binding.root
     }
