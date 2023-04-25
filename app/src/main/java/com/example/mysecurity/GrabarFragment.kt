@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentGrabarBinding
 
 class GrabarFragment : Fragment() {
@@ -33,6 +34,9 @@ class GrabarFragment : Fragment() {
             // https://developer.android.com/guide/components/intents-common?hl=es-419#Camera
 
             startActivity(Intent(MediaStore.ACTION_VIDEO_CAPTURE))
+        }
+        binding.botonAudio.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.action_grabarFragment_to_grabarAudioFragment)
         }
         return binding.root
     }

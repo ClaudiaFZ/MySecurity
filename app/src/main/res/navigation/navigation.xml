@@ -59,7 +59,11 @@
     <fragment
         android:id="@+id/grabarFragment"
         android:name="com.example.mysecurity.GrabarFragment"
-        android:label="@string/grabar" />
+        android:label="@string/grabar" >
+        <action
+            android:id="@+id/action_grabarFragment_to_grabarAudioFragment"
+            app:destination="@id/grabarAudioFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sonidoFlashFragment"
         android:name="com.example.mysecurity.SonidoFlashFragment"
@@ -80,4 +84,8 @@
         android:id="@+id/compartirUbicacionFragment"
         android:name="com.example.mysecurity.CompartirUbicacionFragment"
         android:label="CompartirUbicacionFragment" />
+    <fragment
+        android:id="@+id/grabarAudioFragment"
+        android:name="com.example.mysecurity.GrabarAudioFragment"
+        android:label="GrabarAudioFragment" />
 </navigation>

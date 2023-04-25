@@ -1,43 +1,42 @@
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/contactos_text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/contactos_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/contactos_emergencia"/>
-
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/contactos_emergencia" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/contactos_emergecia_recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:layout_below="@id/contactos_text"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactos_text"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
             <EditText
                 android:id="@+id/tiempo_ubicacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/insertar_tiempo"
-                android:layout_below="@id/contactos_emergecia_recycler_view"/>
+                android:layout_below="@id/contactos_emergecia_recycler_view"
+                android:hint="@string/insertar_tiempo" />
 
             <Button
                 android:id="@+id/boton_compartir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/compartir"
-                android:layout_below="@id/tiempo_ubicacion"/>
-        </RelativeLayout>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                android:layout_below="@id/tiempo_ubicacion"
+                android:text="@string/compartir" />
+        </LinearLayout>
+    </RelativeLayout>
 
 </layout>
