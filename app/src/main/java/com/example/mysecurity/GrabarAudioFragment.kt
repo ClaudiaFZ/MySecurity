@@ -47,7 +47,7 @@ class GrabarAudioFragment : Fragment() {
             ActivityCompat.requestPermissions(requireActivity(), permissions,0)
         }*/
 
-        /*recorder =  MediaRecorder(requireContext())
+        recorder =  MediaRecorder(requireActivity())
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC)
         recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
 
@@ -61,9 +61,9 @@ class GrabarAudioFragment : Fragment() {
         } catch (e: IOException) {
             e.printStackTrace()
             Toast.makeText(requireContext(), "Recording Error , Please restart your app ", Toast.LENGTH_LONG).show()
-        }*/
+        }
 
-        recorder =  MediaRecorder(requireContext()).apply {
+        /*recorder =  MediaRecorder(requireContext()).apply {
             setAudioSource(MediaRecorder.AudioSource.MIC)
             setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
 
@@ -78,7 +78,7 @@ class GrabarAudioFragment : Fragment() {
                 e.printStackTrace()
                 Toast.makeText(requireContext(), "Recording Error , Please restart your app ", Toast.LENGTH_LONG).show()
             }
-        }
+        }*/
 
 
 

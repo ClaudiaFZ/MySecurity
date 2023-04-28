@@ -6,16 +6,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/contactos_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:text="@string/contactos_emergencia" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactos_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/contactos_emergencia"
+                android:layout_gravity="center_horizontal"
+                android:textSize="38dp"
+                android:textColor="@color/black"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/contactos_emergecia_recycler_view"
                 android:layout_width="match_parent"
@@ -28,11 +34,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/contactos_emergecia_recycler_view"
-                android:hint="@string/insertar_tiempo" />
+                android:hint="@string/insertar_tiempo"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/boton_compartir"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tiempo_ubicacion"
                 android:text="@string/compartir" />

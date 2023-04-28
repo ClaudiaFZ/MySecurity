@@ -18,7 +18,7 @@ import com.example.mysecurity.databinding.FragmentAyudaBinding
 
 class AyudaFragment : Fragment() {
     lateinit var binding: FragmentAyudaBinding
-
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,6 +51,7 @@ class AyudaFragment : Fragment() {
 
         return binding.root
     }
+
 
 
 }

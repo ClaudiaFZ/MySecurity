@@ -38,5 +38,7 @@
     <string name="compartir">Compartir</string>
     <string name="insertar_tiempo">Duración en minutos</string>
     <string name="detener_grabacion">Detener grabacion</string>
+    <string name="añadir_marcador">Añadir marcador</string>
+    <string name="ver_ubicaiones">Ver ubicación</string>
 
 </resources>
