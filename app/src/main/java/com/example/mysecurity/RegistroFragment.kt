@@ -8,10 +8,12 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentIniciarSesionBinding
+import com.example.mysecurity.databinding.FragmentRegistroBinding
 
-class IniciarSesionFragment : Fragment() {
+class RegistroFragment : Fragment() {
 
-    lateinit var binding: FragmentIniciarSesionBinding
+    lateinit var binding: FragmentRegistroBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,17 +21,13 @@ class IniciarSesionFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_iniciar_sesion,
+            R.layout.fragment_registro,
             container,
             false
         )
 
         binding.buttonSignUp.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_iniciarSesionFragment_to_principalFragment)
-        }
-
-        binding.buttonCrearCuenta.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_iniciarSesionFragment_to_registroFragment)
+            view.findNavController().navigate(R.id.action_registroFragment_to_principalFragment)
         }
 
         return binding.root

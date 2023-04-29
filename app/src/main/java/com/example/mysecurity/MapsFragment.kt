@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -22,7 +23,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsFragment : Fragment() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private lateinit var mapa: GoogleMap
+    //private lateinit var mapa: GoogleMap
     /*private val callback = OnMapReadyCallback {
 
         if (ActivityCompat.checkSelfPermission(
@@ -42,15 +43,27 @@ class MapsFragment : Fragment() {
 
     }*/
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         //mapa = getMapAsync(OnMapReadyCallback)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+        val locationRequest = LocationRequest.create()
+            .setInterval(10000)
+            .setFastestInterval(5000)
+            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+
+        fusedLocationClient.requestLocationUpdates(locationRequest, object : LocationCallback() {
+            override fun onLocationResult(locationResult: LocationResult) {
+                for (location in locationResult.locations) {
+                    Log.d(TAG, "Latitude: \${location.latitude}, Longitude: \${location.longitude}")
+                }
+            }
+        }, Looper.getMainLooper())
         return inflater.inflate(R.layout.fragment_maps, container, false)
-    }
+    }*/
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -17,7 +17,7 @@
         android:icon="@drawable/ic_baseline_emergency_24"
         android:title="@string/numero_emergencias"/>
     <item
-        android:id="@+id/statisticsFragment"
+        android:id="@id/iniciarSesionFragment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_logout_24"
         android:title="@string/cerrar_sesion"/>

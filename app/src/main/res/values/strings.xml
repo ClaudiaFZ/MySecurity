@@ -24,13 +24,13 @@
     <string name="notificaciones">Notifications</string>
     <string name="numero_emergencias">Emergency number</string>
     <string name="cerrar_sesion">Log out</string>
-    <string name="iniciar_sesion">Log in</string>
+    <string name="iniciar_sesion">Sign in</string>
     <string name="crear_cuenta">Create account</string>
     <string name="usuario">User</string>
     <string name="contrasena">Password</string>
     <string name="bienvenida">WELCOME</string>
     <string name="nombre">Name:</string>
-    <string name="correo_electronico">Email:</string>
+    <string name="correo_electronico">Email address:</string>
     <string name="numero_telefono">Phone number:</string>
     <string name="inicio">START</string>
     <string name="rutas">ROUTES</string>
@@ -40,5 +40,13 @@
     <string name="detener_grabacion">Stop record</string>
     <string name="añadir_marcador">Add marker</string>
     <string name="ver_ubicaiones">See ubications</string>
+    <string name="olvidar_ctr">Forgot password?</string>
+    <string name="registro">Sign up</string>
+    <string name="correo">Email address</string>
+    <string name="repetir_ctr">Repeat password</string>
+    <string name="telefono">Phone number</string>
+    <string name="registrarse">Sign up!</string>
+    <string name="confirmacion">Everything is ok!</string>
+    <string name="parar">Pause</string>
 
 </resources>

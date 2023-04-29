@@ -31,7 +31,7 @@
 
                     <TextView
                         android:id="@+id/list_item_question"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_alignRight="@id/check"
@@ -44,8 +44,7 @@
                     <CheckBox
                         android:id="@+id/check"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@id/list_item_question" />
+                        android:layout_height="wrap_content" />
 
 
             </LinearLayout>

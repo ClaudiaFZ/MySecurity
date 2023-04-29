@@ -15,17 +15,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
-            android:text="@string/bienvenida"
+            android:text="@string/registro"
             android:textColor="@color/purple_500"
             android:textSize="40sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ayuda"
-            android:layout_marginTop="8dp"/>
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailError"
@@ -58,29 +51,43 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/olvidarCtr"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordError2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_width="wrap_content"
-            android:text="@string/olvidar_ctr"
-            android:textColor="@color/purple_500"
-            android:textSize="10dp"
-            android:layout_gravity="right"/>
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="14dp">
+
+            <EditText
+                android:id="@+id/enterPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repetir_ctr"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefonoError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <EditText
+                android:id="@+id/enterTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/buttonSignUp"
+            android:layout_marginTop="14dp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="@string/iniciar_sesion" />
-
-        <Button
-            android:id="@+id/buttonCrearCuenta"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="@string/crear_cuenta" />
-
+            android:text="@string/registrarse" />
 
     </LinearLayout>
 </layout>

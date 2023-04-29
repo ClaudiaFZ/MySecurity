@@ -1,16 +1,14 @@
 package com.example.mysecurity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import androidx.core.view.GravityCompat
+import androidx.core.view.MenuProvider
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
 import com.example.mysecurity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,23 +23,6 @@ class MainActivity : AppCompatActivity() {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
 
-        /*val navController = Navigation.findNavController(this, R.id.navigation)
-        val appBarConfiguration = AppBarConfiguration.Builder(navController.graph).build()
-        NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration)*/
-
-        /*val navController = findNavController(requireView())
-        val appBarConfiguration = AppBarConfiguration(navController.graph)
-        binding.toolbar
-            .setupWithNavController(navController, appBarConfiguration)
-
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.navigation) as NavHostFragment
-        val navController = navHostFragment.navController
-        val appBarConfiguration = AppBarConfiguration(
-            topLevelDestinationIds = setOf(),
-            fallbackOnNavigateUpListener = ::onSupportNavigateUp
-        )
-        binding.toolbar
-            .setupWithNavController(navController, appBarConfiguration)*/
     }
+
 }

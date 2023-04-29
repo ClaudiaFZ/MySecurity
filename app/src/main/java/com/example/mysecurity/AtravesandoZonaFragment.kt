@@ -11,6 +11,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.mysecurity.databinding.FragmentAtravesandoZonaBinding
@@ -57,13 +59,17 @@ class AtravesandoZonaFragment : Fragment() {
 
             override fun onFinish() {
                 isTimerRunning = false
-                val permission = ContextCompat.checkSelfPermission(requireContext().applicationContext,
-                    Manifest.permission.CALL_PHONE)
 
-                if (permission != PackageManager.PERMISSION_GRANTED) {
-                    // ACTION_CALL
-                    startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:637093883")))
+                if (ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(),
+                        Manifest.permission.CALL_PHONE)) {
+                    //El usuario ya ha rechazado el permiso anteriormente, debemos informarle que vaya a ajustes.
+                } else {
+                    //El usuario nunca ha aceptado ni rechazado, así que le pedimos que acepte el permiso.
+                    ActivityCompat.requestPermissions(requireActivity(),
+                        arrayOf(Manifest.permission.CALL_PHONE),
+                        0)
 
+                    startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:637093883")))
                 }
 
                 updateButton()
