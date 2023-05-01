@@ -48,7 +48,9 @@
     <string name="registrarse">Registrarse!</string>
     <string name="confirmacion">¡Todo bien!</string>
     <string name="parar">Pausar</string>
-
+    <string name="editar_emergencias">Editar número de emergencias:</string>
+    <string name="nuevo_numero">Nuevo numero</string>
+    <string name="editar">Editar</string>
 
 
 </resources>

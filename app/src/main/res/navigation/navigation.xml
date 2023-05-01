@@ -99,4 +99,12 @@
             android:id="@+id/action_registroFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/editarNEmergenciasFragment"
+        android:name="com.example.mysecurity.EditarNEmergenciasFragment"
+        android:label="EditarNEmergenciasFragment" >
+        <action
+            android:id="@+id/action_editarNEmergenciasFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
 </navigation>

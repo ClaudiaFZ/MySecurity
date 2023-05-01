@@ -48,5 +48,8 @@
     <string name="registrarse">Sign up!</string>
     <string name="confirmacion">Everything is ok!</string>
     <string name="parar">Pause</string>
+    <string name="editar_emergencias">Edit the emergency number:</string>
+    <string name="nuevo_numero">New number</string>
+    <string name="editar">Edit</string>
 
 </resources>
