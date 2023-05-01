@@ -1,5 +1,6 @@
 package com.example.mysecurity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,8 +30,9 @@ class PrincipalFragment : Fragment() {
 
         }
 
-        binding.botonMapa.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_principalFragment_to_mapsFragment)
+        binding.botonMapa.setOnClickListener {
+            val intent = Intent(activity, MapsActivity::class.java)
+            requireActivity().startActivity(intent)
         }
 
         binding.botonAyuda.setOnClickListener {  view ->
