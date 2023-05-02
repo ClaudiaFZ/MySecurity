@@ -12,30 +12,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_vertical">
 
 
 
             <Button
-                android:id="@+id/boton_video_audio"
+                android:id="@+id/boton_flash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/flash" />
+                android:text="@string/flash"
+                android:layout_gravity="center_horizontal"/>
 
             <Button
-                android:id="@+id/boton_audio"
+                android:id="@+id/boton_sonido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sonido" />
+                android:text="@string/sonido"
+                android:layout_gravity="center_horizontal"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/new_card_fab"
                 style="@style/Widget.Design.FloatingActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
                 android:src="@drawable/ic_baseline_add_circle_24"
                 android:contentDescription="@string/anadir_sonido" />
 

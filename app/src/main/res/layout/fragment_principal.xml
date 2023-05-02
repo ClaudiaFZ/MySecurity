@@ -35,27 +35,33 @@
                 android:backgroundTint="#FF0000"
                 android:gravity="center"
                 android:text="@string/ayuda"
-                android:layout_weight="15"/>
+                android:layout_weight="15"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="5"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
 
                 <Button
                     android:id="@+id/boton_compartir_ubicacion"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/compartir_ubicacion"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"/>
 
                 <Button
                     android:id="@+id/boton_atravesar_zona"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/atravesando_zona"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"/>
 
             </LinearLayout>
 
@@ -64,21 +70,25 @@
                 android:layout_height="0dp"
                 android:layout_weight="5"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
 
                 <Button
                     android:id="@+id/boton_grabar"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:text="@string/grabar"
-                    android:layout_width="0dp"/>
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"/>
 
                 <Button
                     android:id="@+id/boton_sonido_flash"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/sonido_flash" />
+                    android:text="@string/sonido_flash"
+                    android:layout_marginLeft="5dp"/>
             </LinearLayout>
 
             <Button
@@ -87,7 +97,9 @@
                 android:layout_height="0dp"
                 android:layout_weight="5"
                 android:layout_alignParentBottom="true"
-                android:text="@string/mapa" />
+                android:text="@string/mapa"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

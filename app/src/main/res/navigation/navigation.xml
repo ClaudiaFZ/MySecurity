@@ -60,7 +60,11 @@
     <fragment
         android:id="@+id/sonidoFlashFragment"
         android:name="com.example.mysecurity.SonidoFlashFragment"
-        android:label="@string/sonido_flash" />
+        android:label="@string/sonido_flash" >
+        <action
+            android:id="@+id/action_sonidoFlashFragment_to_linternaFragment"
+            app:destination="@id/linternaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/anadirContactoFragment"
         android:name="com.example.mysecurity.AnadirContactoFragment"
@@ -100,4 +104,9 @@
             android:id="@+id/action_editarNEmergenciasFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/linternaFragment"
+        android:name="com.example.mysecurity.LinternaFragment"
+        android:label="LinternaFragment"/>
+
 </navigation>

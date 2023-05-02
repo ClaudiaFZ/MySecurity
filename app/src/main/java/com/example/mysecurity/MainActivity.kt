@@ -9,6 +9,12 @@ import android.view.MenuItem
 import androidx.core.view.GravityCompat
 import androidx.core.view.MenuProvider
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 import com.example.mysecurity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,5 +30,21 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    /*val navController = findNavController(R.id.navigation)
+    val appBarConfiguration = AppBarConfiguration(navController.graph)
+    val listener = object : NavigationUI.OnDestinationChangedListener {
+        override fun onDestinationChanged(
+            controller: NavController,
+            destination: NavDestination,
+            arguments: Bundle?
+        ) {
+            // Actualizar el título de la barra superior
+            supportActionBar?.title = destination.label
+        }
+    }
+    NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
+    navController.addOnDestinationChangedListener(listener)*/
+
 
 }

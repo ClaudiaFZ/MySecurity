@@ -17,8 +17,9 @@
             android:layout_width="wrap_content"
             android:text="@string/bienvenida"
             android:textColor="@color/purple_500"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -31,7 +32,10 @@
             android:id="@+id/emailError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp">
+            android:layout_marginTop="14dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <EditText
                 android:id="@+id/enterEmail"
@@ -47,7 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
-            android:layout_marginTop="14dp">
+            android:layout_marginTop="14dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <EditText
                 android:id="@+id/enterPassword"
@@ -73,13 +80,17 @@
             android:id="@+id/buttonSignUp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="@string/iniciar_sesion" />
+            android:text="@string/iniciar_sesion"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
 
         <Button
             android:id="@+id/buttonCrearCuenta"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="@string/crear_cuenta" />
+            android:text="@string/crear_cuenta"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
 
 
     </LinearLayout>

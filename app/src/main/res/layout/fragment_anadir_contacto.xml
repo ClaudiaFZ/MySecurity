@@ -24,13 +24,17 @@
             android:text="@string/nombre"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:layout_marginTop="14dp"/>
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nombreError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp">
+            android:layout_marginTop="14dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <EditText
                 android:id="@+id/enterNombre"
@@ -46,13 +50,17 @@
             android:text="@string/correo_electronico"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:layout_marginTop="14dp"/>
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp">
+            android:layout_marginTop="14dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <EditText
                 android:id="@+id/enterEmail"
@@ -69,13 +77,17 @@
             android:text="@string/numero_telefono"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:layout_marginTop="14dp"/>
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/telefonoError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp">
+            android:layout_marginTop="14dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <EditText
                 android:id="@+id/enterTelefono"
