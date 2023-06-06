@@ -27,7 +27,6 @@ class SetAtravesarZonaFragment : Fragment() {
             false
         )
 
-
         return binding.root
     }
 

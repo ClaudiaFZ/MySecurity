@@ -103,7 +103,9 @@
             android:layout_marginTop="14dp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="@string/anadir_contacto" />
+            android:text="@string/anadir_contacto"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 </layout>

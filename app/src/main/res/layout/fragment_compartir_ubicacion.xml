@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/contactos_emergecia_recycler_view"
                 android:hint="@string/insertar_tiempo"
+                android:text="10"
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/black"/>
 

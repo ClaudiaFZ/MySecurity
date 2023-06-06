@@ -14,6 +14,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentAyudaBinding
+import java.util.concurrent.TimeUnit
 
 
 class AyudaFragment : Fragment() {
@@ -45,8 +46,13 @@ class AyudaFragment : Fragment() {
             ActivityCompat.requestPermissions(requireActivity(),
                 arrayOf(Manifest.permission.CALL_PHONE),
                 0)
-
+            try {
+                TimeUnit.SECONDS.sleep(5)
+            } catch (e: InterruptedException) {
+                e.printStackTrace()
+            }
             startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:637093883")))
+
         }
 
         return binding.root

@@ -51,7 +51,7 @@
     <string name="editar_emergencias">Edit the emergency number:</string>
     <string name="nuevo_numero">New number</string>
     <string name="editar">Edit</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="compartir_ubi">SHARE UBICATION</string>
+    <string name="grabarr">RECORD</string>
 
 </resources>

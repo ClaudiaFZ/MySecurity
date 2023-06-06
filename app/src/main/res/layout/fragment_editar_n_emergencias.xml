@@ -5,13 +5,14 @@
         android:id="@+id/linearLayout"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
 
         <TextView
             android:id="@+id/editarEmergencias"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:text="@string/editar_emergencias"
             android:textColor="@color/purple_500"
@@ -22,6 +23,7 @@
             android:id="@+id/emergenciasError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginTop="14dp">
 
             <EditText

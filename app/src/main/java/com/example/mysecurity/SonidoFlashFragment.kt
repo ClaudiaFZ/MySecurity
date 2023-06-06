@@ -12,7 +12,9 @@ import com.example.mysecurity.databinding.FragmentSonidoFlashBinding
 
 class SonidoFlashFragment : Fragment() {
     lateinit var binding: FragmentSonidoFlashBinding
-    private lateinit var mediaPlayer: MediaPlayer
+    private var mediaPlayer = MediaPlayer()
+    private var playing = false
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,15 +27,25 @@ class SonidoFlashFragment : Fragment() {
             container,
             false
         )
+        val audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        mediaPlayer.setDataSource(audioUrl)
+        mediaPlayer.prepare()
+
         binding.botonFlash.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_sonidoFlashFragment_to_linternaFragment)
         }
         binding.botonSonido.setOnClickListener {
-            mediaPlayer = MediaPlayer()
-            val audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-            mediaPlayer.setDataSource(audioUrl)
-            mediaPlayer.prepare()
-            mediaPlayer.start()
+            if (!playing){
+
+                mediaPlayer.start()
+                binding.botonSonido.text = "Pause"
+                playing = true
+            }
+            else{
+                playing = false
+                binding.botonSonido.text = "SONIDO"
+                mediaPlayer.release()
+            }
         }
         return binding.root
     }

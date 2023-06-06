@@ -27,7 +27,8 @@
     <fragment
         android:id="@+id/setAtravesarZonaFragment"
         android:name="com.example.mysecurity.SetAtravesarZonaFragment"
-        android:label="@string/atravesando_zona" >
+        android:label="@string/atravesando_zona"
+        tools:layout="@layout/fragment_set_atravesar_zona">
         <action
             android:id="@+id/action_setAtravesarZonaFragment_to_atravesandoZonaFragment"
             app:destination="@id/atravesandoZonaFragment" />
@@ -44,7 +45,7 @@
     <fragment
         android:id="@+id/ayudaFragment"
         android:name="com.example.mysecurity.AyudaFragment"
-        android:label="@string/ayuda" >
+        android:label="@string/ayuda">
         <action
             android:id="@+id/action_ayudaFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
@@ -68,14 +69,20 @@
     <fragment
         android:id="@+id/anadirContactoFragment"
         android:name="com.example.mysecurity.AnadirContactoFragment"
-        android:label="@string/anadir_contacto" />
+        android:label="@string/anadir_contacto" >
+        <action
+            android:id="@+id/action_anadirContactoFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/iniciarSesionFragment"
         android:name="com.example.mysecurity.IniciarSesionFragment"
         android:label="@string/iniciar_sesion" >
         <action
             android:id="@+id/action_iniciarSesionFragment_to_principalFragment"
-            app:destination="@id/principalFragment" />
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/principalFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_iniciarSesionFragment_to_registroFragment"
             app:destination="@id/registroFragment" />
@@ -83,11 +90,11 @@
     <fragment
         android:id="@+id/compartirUbicacionFragment"
         android:name="com.example.mysecurity.CompartirUbicacionFragment"
-        android:label="CompartirUbicacionFragment" />
+        android:label="@string/compartir_ubi" />
     <fragment
         android:id="@+id/grabarAudioFragment"
         android:name="com.example.mysecurity.GrabarAudioFragment"
-        android:label="GrabarAudioFragment" />
+        android:label="@string/grabarr" />
     <fragment
         android:id="@+id/registroFragment"
         android:name="com.example.mysecurity.RegistroFragment"
