@@ -53,5 +53,6 @@
     <string name="editar">Edit</string>
     <string name="compartir_ubi">SHARE UBICATION</string>
     <string name="grabarr">RECORD</string>
+    <string name="title_activity_acceso">AccesoActivity</string>
 
 </resources>

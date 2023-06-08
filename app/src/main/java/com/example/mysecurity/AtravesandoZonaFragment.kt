@@ -28,7 +28,7 @@ class AtravesandoZonaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         //setContentView(R.layout.activity_main)
 
         binding = DataBindingUtil.inflate(

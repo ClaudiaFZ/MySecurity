@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/iniciarSesionFragment">
+    app:startDestination="@id/principalFragment">
     <fragment
         android:id="@+id/principalFragment"
         android:name="com.example.mysecurity.PrincipalFragment"
@@ -74,19 +74,7 @@
             android:id="@+id/action_anadirContactoFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/iniciarSesionFragment"
-        android:name="com.example.mysecurity.IniciarSesionFragment"
-        android:label="@string/iniciar_sesion" >
-        <action
-            android:id="@+id/action_iniciarSesionFragment_to_principalFragment"
-            app:destination="@id/principalFragment"
-            app:popUpTo="@id/principalFragment"
-            app:popUpToInclusive="true"/>
-        <action
-            android:id="@+id/action_iniciarSesionFragment_to_registroFragment"
-            app:destination="@id/registroFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/compartirUbicacionFragment"
         android:name="com.example.mysecurity.CompartirUbicacionFragment"
@@ -95,14 +83,7 @@
         android:id="@+id/grabarAudioFragment"
         android:name="com.example.mysecurity.GrabarAudioFragment"
         android:label="@string/grabarr" />
-    <fragment
-        android:id="@+id/registroFragment"
-        android:name="com.example.mysecurity.RegistroFragment"
-        android:label="RegistroFragment" >
-        <action
-            android:id="@+id/action_registroFragment_to_principalFragment"
-            app:destination="@id/principalFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/editarNEmergenciasFragment"
         android:name="com.example.mysecurity.EditarNEmergenciasFragment"

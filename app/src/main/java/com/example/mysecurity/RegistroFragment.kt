@@ -1,5 +1,6 @@
 package com.example.mysecurity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +18,7 @@ class RegistroFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
@@ -26,8 +27,9 @@ class RegistroFragment : Fragment() {
             false
         )
 
-        binding.buttonSignUp.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_registroFragment_to_principalFragment)
+        binding.buttonSignUp.setOnClickListener {
+            val intent = Intent(activity, MainActivity::class.java)
+            requireActivity().startActivity(intent)
         }
 
         return binding.root

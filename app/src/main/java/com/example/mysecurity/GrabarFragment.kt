@@ -19,7 +19,7 @@ class GrabarFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
@@ -33,7 +33,7 @@ class GrabarFragment : Fragment() {
             //}
             // https://developer.android.com/guide/components/intents-common?hl=es-419#Camera
 
-            startActivity(Intent(MediaStore.ACTION_VIDEO_CAPTURE))
+            startActivity(Intent(ACTION_VIDEO_CAPTURE))
         }
         binding.botonAudio.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_grabarFragment_to_grabarAudioFragment)

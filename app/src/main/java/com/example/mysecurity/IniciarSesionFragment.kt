@@ -1,11 +1,13 @@
 package com.example.mysecurity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentIniciarSesionBinding
 
@@ -15,7 +17,7 @@ class IniciarSesionFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
@@ -23,9 +25,10 @@ class IniciarSesionFragment : Fragment() {
             container,
             false
         )
-
-        binding.buttonSignUp.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_iniciarSesionFragment_to_principalFragment)
+        //activity.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+        binding.buttonSignUp.setOnClickListener {
+            val intent = Intent(activity, MainActivity::class.java)
+            requireActivity().startActivity(intent)
         }
 
         binding.buttonCrearCuenta.setOnClickListener { view ->
