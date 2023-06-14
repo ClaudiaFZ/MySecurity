@@ -82,7 +82,11 @@
     <fragment
         android:id="@+id/grabarAudioFragment"
         android:name="com.example.mysecurity.GrabarAudioFragment"
-        android:label="@string/grabarr" />
+        android:label="@string/grabarr" >
+        <action
+            android:id="@+id/action_grabarAudioFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/editarNEmergenciasFragment"

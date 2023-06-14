@@ -10,28 +10,19 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:gravity="center_vertical">
-        <TextView
-            android:id="@+id/editMinutos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/atravesando_zona"
-            android:textColor="@color/purple_500"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/set_time"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_gravity="center_vertical"
             android:layout_marginTop="100dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/minutos"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 

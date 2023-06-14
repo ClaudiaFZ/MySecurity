@@ -3,7 +3,7 @@
     <string name="app_name">MySecurity</string>
     <string name="ayuda">AYUDA</string>
     <string name="compartir_ubicacion">COMPARTIR UBICACIÓN</string>
-    <string name="atravesando_zona">ATRAVESAR ZONA</string>
+    <string name="atravesando_zona">ATRAVESAR ZONA...</string>
     <string name="grabar">GRABAR</string>
     <string name="sonido_flash">SONIDO Y FLASH</string>
     <string name="mapa">MAPA</string>
@@ -53,6 +53,7 @@
     <string name="editar">Editar</string>
     <string name="compartir_ubi">COMPARTIR UBICACIÓN</string>
     <string name="grabarr">GRABAR</string>
-
+    <string name="duracion">Duracion en minutos:</string>
+    <string name="bateria">¿Compartir porcentaje debatería? </string>
 
 </resources>

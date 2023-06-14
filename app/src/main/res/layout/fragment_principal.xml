@@ -22,12 +22,6 @@
             app:layout_constraintStart_toStartOf="parent"
             android:weightSum="30">
 
-            <!--TextView
-                android:id="@+id/inicio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{usuario.correo}" /-->
-
             <Button
                 android:id="@+id/boton_ayuda"
                 android:layout_width="match_parent"
@@ -35,6 +29,7 @@
                 android:backgroundTint="#FF0000"
                 android:gravity="center"
                 android:text="@string/ayuda"
+                android:textSize="50dp"
                 android:layout_weight="15"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"/>
@@ -52,6 +47,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/compartir_ubicacion"
+                    android:textSize="20dp"
                     android:layout_weight="1"
                     android:layout_marginRight="5dp"/>
 
@@ -60,6 +56,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/atravesando_zona"
+                    android:textSize="20dp"
                     android:layout_weight="1"
                     android:layout_marginLeft="5dp"/>
 
@@ -79,6 +76,7 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:text="@string/grabar"
+                    android:textSize="20dp"
                     android:layout_width="0dp"
                     android:layout_marginRight="5dp"/>
 
@@ -88,6 +86,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/sonido_flash"
+                    android:textSize="20dp"
                     android:layout_marginLeft="5dp"/>
             </LinearLayout>
 
@@ -98,6 +97,7 @@
                 android:layout_weight="5"
                 android:layout_alignParentBottom="true"
                 android:text="@string/mapa"
+                android:textSize="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>

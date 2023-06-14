@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">MySecurity</string>
     <string name="ayuda">HELP</string>
-    <string name="compartir_ubicacion">SHARE UBICATION</string>
-    <string name="atravesando_zona">CROSSING ZONE</string>
+    <string name="compartir_ubicacion">SHARE LOCATION</string>
+    <string name="atravesando_zona">CROSSING ZONE...</string>
     <string name="grabar">RECORD</string>
     <string name="sonido_flash">SOUND AND FLASH</string>
     <string name="mapa">MAP</string>
@@ -53,6 +53,6 @@
     <string name="editar">Edit</string>
     <string name="compartir_ubi">SHARE UBICATION</string>
     <string name="grabarr">RECORD</string>
-    <string name="title_activity_acceso">AccesoActivity</string>
-
+    <string name="duracion">Duration in minutes:</string>
+    <string name="bateria">¿Compartir porcentaje debatería? </string>
 </resources>

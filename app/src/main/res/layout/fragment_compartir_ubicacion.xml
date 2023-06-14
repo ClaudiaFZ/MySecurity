@@ -12,7 +12,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/contactos_text"
@@ -21,7 +22,8 @@
                 android:layout_alignParentTop="true"
                 android:text="@string/contactos_emergencia"
                 android:layout_gravity="center_horizontal"
-                android:textSize="38dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"/>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -31,6 +33,14 @@
                 android:layout_below="@id/contactos_text"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/duracion"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
             <EditText
                 android:id="@+id/tiempo_ubicacion"
                 android:layout_width="wrap_content"
@@ -38,8 +48,20 @@
                 android:layout_below="@id/contactos_emergecia_recycler_view"
                 android:hint="@string/insertar_tiempo"
                 android:text="10"
+                android:inputType="number"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compaartir "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/boton_compartir"
