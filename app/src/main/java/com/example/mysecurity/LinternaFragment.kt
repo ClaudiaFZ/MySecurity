@@ -44,13 +44,13 @@ class LinternaFragment : Fragment() {
             camManager.setTorchMode(cameraId, true)
         } catch (e: Exception){
             Toast.makeText(context, "The device doesn't have flash unit", Toast.LENGTH_SHORT)
-            view?.findNavController()?.navigate(R.id.action_linternaFragment_to_principalFragment)
+            //view?.findNavController()?.navigate(R.id.action_linternaFragment_to_principalFragment)
         }
 
 
         binding.botonPararFlash.setOnClickListener {
             camManager.setTorchMode(cameraId, false)
-            view?.findNavController()?.navigate(R.id.action_linternaFragment_to_principalFragment)
+            //view?.findNavController()?.navigate(R.id.action_linternaFragment_to_principalFragment)
         }
 
         return binding.root
