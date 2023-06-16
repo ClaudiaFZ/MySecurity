@@ -99,6 +99,10 @@
     <fragment
         android:id="@+id/linternaFragment"
         android:name="com.example.mysecurity.LinternaFragment"
-        android:label="@string/linterna"/>
+        android:label="@string/linterna">
+        <action
+            android:id="@+id/action_linternaFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
 
 </navigation>

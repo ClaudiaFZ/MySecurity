@@ -60,5 +60,6 @@
     <string name="tipoMarcador">Select marker type:</string>
     <string name="editarNEmergencias">EDIT EMERGENCY NUMBER </string>
     <string name="linterna">FLASH</string>
-
+    <string name="info_marcador">Marker information</string>
+    <string name="error_flash">The device doesn't have flash unit</string>
 </resources>

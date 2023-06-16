@@ -70,7 +70,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         polyline.endCap = RoundCap()
 
         map.setOnPolygonClickListener {
-            builder.setTitle("PROBLEMITAS")
+            builder.setTitle("Información del marcador")
                 .setMessage("Escasa luz")
                 .setCancelable(true)
                 .setPositiveButton("ACEPTAR"){dialogInterface, it->
@@ -98,7 +98,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             null
         )
         map.setOnPolygonClickListener {
-            builder.setTitle("PROBLEMITAS")
+            builder.setTitle("Información del marcador")
                 .setMessage("Robo bolso")
                 .setCancelable(true)
                 .setPositiveButton("ACEPTAR"){dialogInterface, it->
@@ -114,7 +114,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         circle.isClickable = true
 
         map.setOnCircleClickListener {
-            builder.setTitle("PROBLEMITAS")
+            builder.setTitle("Información del marcador")
                 .setMessage("Zona peligrosa")
                 .setCancelable(true)
                 .setPositiveButton("ACEPTAR"){dialogInterface, it->
