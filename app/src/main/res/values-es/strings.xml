@@ -55,5 +55,9 @@
     <string name="grabarr">GRABAR</string>
     <string name="duracion">Duracion en minutos:</string>
     <string name="bateria">¿Compartir porcentaje debatería? </string>
-
+    <string name="añadir">Añadir</string>
+    <string name="descipcion">Descripción</string>
+    <string name="tipoMarcador">Selecciona el tipo de marcador:</string>
+    <string name="editarNEmergencias">EDITAR Nº EMERGENCIAS </string>
+    <string name="linterna">FLASH</string>
 </resources>

@@ -91,7 +91,7 @@
     <fragment
         android:id="@+id/editarNEmergenciasFragment"
         android:name="com.example.mysecurity.EditarNEmergenciasFragment"
-        android:label="EditarNEmergenciasFragment" >
+        android:label="@string/editarNEmergencias" >
         <action
             android:id="@+id/action_editarNEmergenciasFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
@@ -99,6 +99,6 @@
     <fragment
         android:id="@+id/linternaFragment"
         android:name="com.example.mysecurity.LinternaFragment"
-        android:label="LinternaFragment"/>
+        android:label="@string/linterna"/>
 
 </navigation>

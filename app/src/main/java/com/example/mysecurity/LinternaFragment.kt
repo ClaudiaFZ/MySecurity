@@ -16,10 +16,11 @@ import androidx.camera.core.CameraX
 import androidx.camera.core.TorchState
 
 class LinternaFragment : Fragment() {
-    /*private val camManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager?
-    val cameraId = camManager!!.cameraIdList[0] // usualmente la camara delantera esta en la posicion 0
+    private val camManager = activity?.getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
-    val camera = CameraX.getCameraProvider(this).bindToLifecycle(this, CameraSelector.DEFAULT_BACK_CAMERA)*/
+    val cameraId = camManager.cameraIdList[0] // usualmente la camara delantera esta en la posicion 0
+
+    //val camera = CameraX.getCameraProvider(this).bindToLifecycle(this, CameraSelector.DEFAULT_BACK_CAMERA)
 
     lateinit var binding: FragmentLinternaBinding
 
@@ -34,18 +35,18 @@ class LinternaFragment : Fragment() {
             false
         )
 
-        /*camManager!!.setTorchMode(cameraId, true)
+        camManager.setTorchMode(cameraId, true)
 
         binding.botonPararFlash.setOnClickListener {
-            camManager!!.setTorchMode(cameraId, false)
-        }*/
+            camManager.setTorchMode(cameraId, false)
+        }
 
         return binding.root
     }
 
-    /*override fun onPause() {
+    override fun onPause() {
         super.onPause()
         //camManager!!.setTorchMode(cameraId, false)
-    }*/
+    }
 
 }

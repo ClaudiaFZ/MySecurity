@@ -1,9 +1,11 @@
 package com.example.mysecurity
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
@@ -31,8 +33,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
+        setSupportActionBar(findViewById(R.id.toolbar))
         createFragment()
         builder = AlertDialog.Builder(this)
+
+        var botonAnadirmarcador = findViewById<Button>(R.id.add_marcador)
+        botonAnadirmarcador.setOnClickListener{
+            val intent = Intent(this, MapsActionsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun createFragment(){
