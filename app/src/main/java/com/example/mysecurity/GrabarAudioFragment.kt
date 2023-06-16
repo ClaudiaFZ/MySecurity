@@ -1,8 +1,5 @@
 package com.example.mysecurity
 
-
-
-import android.content.pm.PackageManager
 import android.media.MediaRecorder
 import android.os.Bundle
 import android.os.Environment
@@ -10,17 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentGrabarAudioBinding
 import java.io.File
 import java.io.IOException
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import java.util.UUID
 
 
 class GrabarAudioFragment : Fragment() {
@@ -32,9 +24,9 @@ class GrabarAudioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        var path:File = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_RECORDINGS)
-        var nombre = "MySecurity.m4a"
-        var file:File = File(path, nombre)
+        val path:File = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_RECORDINGS)
+        val nombre = "MySecurity.m4a"
+        val file = File(path, nombre)
         binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_grabar_audio,

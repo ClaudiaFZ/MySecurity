@@ -38,12 +38,12 @@ class SonidoFlashFragment : Fragment() {
             if (!playing){
 
                 mediaPlayer.start()
-                binding.botonSonido.text = "Pause"
+                binding.botonSonido.text = requireContext().getString(R.string.pausa)
                 playing = true
             }
             else{
                 playing = false
-                binding.botonSonido.text = "SONIDO"
+                binding.botonSonido.text = requireContext().getString(R.string.sonido)
                 mediaPlayer.release()
             }
         }

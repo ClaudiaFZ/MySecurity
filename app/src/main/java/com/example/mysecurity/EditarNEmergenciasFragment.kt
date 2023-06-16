@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentEditarNEmergenciasBinding
-import com.example.mysecurity.databinding.FragmentRegistroBinding
 
 class EditarNEmergenciasFragment : Fragment() {
 

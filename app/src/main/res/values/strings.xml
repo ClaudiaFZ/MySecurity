@@ -62,4 +62,9 @@
     <string name="linterna">FLASH</string>
     <string name="info_marcador">Marker information</string>
     <string name="error_flash">The device doesnt have flash unit</string>
+    <string name="pausa">Pause</string>
+    <string name="empezar">Start</string>
+    <string name="aceptar">Acept</string>
+    <string name="ubi_correct">Location sharing was succeed</string>
+
 </resources>

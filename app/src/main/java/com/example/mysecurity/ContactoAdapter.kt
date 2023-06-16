@@ -3,9 +3,7 @@ package com.example.mysecurity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mysecurity.databinding.FragmentCompartirUbicacionBinding
 import com.example.mysecurity.databinding.UbicacionItemBinding
 
 class ContactoAdapter: RecyclerView.Adapter<ContactoAdapter.ContactoHolder>() {

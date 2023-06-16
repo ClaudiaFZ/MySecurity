@@ -62,4 +62,8 @@
     <string name="linterna">FLASH</string>
     <string name="info_marcador">Información del marcador</string>
     <string name="error_flash">El disposittivo no tienen unidad de flash</string>
+    <string name="pausa">Pausa</string>
+    <string name="empezar">Empezar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="ubi_correct">La ubicación se ha compartido correctamente</string>
 </resources>

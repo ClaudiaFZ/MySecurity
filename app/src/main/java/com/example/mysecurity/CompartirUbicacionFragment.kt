@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentCompartirUbicacionBinding
 
 class CompartirUbicacionFragment : Fragment() {
@@ -30,9 +29,9 @@ class CompartirUbicacionFragment : Fragment() {
 
         binding.botonCompartir.setOnClickListener {
             val alertDialog = AlertDialog.Builder(requireContext())
-            alertDialog.setTitle("Compartir ubicación")
-            alertDialog.setMessage("La ubicación se ha compartido correctamente")
-            alertDialog.setPositiveButton("Aceptar") { dialog, which ->
+            alertDialog.setTitle(requireContext().getString(R.string.compartir_ubicacion))
+            alertDialog.setMessage(requireContext().getString(R.string.ubi_correct))
+            alertDialog.setPositiveButton(requireContext().getString(R.string.aceptar)) { _, _ ->
             }
 
             alertDialog.show()

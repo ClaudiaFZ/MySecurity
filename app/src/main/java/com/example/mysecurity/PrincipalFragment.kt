@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.mysecurity.databinding.FragmentPrincipalBinding
-import com.example.mysecurity.databinding.FragmentSetAtravesarZonaBinding
 
 class PrincipalFragment : Fragment() {
     lateinit var binding: FragmentPrincipalBinding
